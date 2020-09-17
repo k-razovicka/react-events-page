@@ -1,0 +1,98 @@
+$text-bold: bold;
+$color-gray: #888888;
+$text-capitalize: capitalize;
+$text-uppercase: uppercase;
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.category-type {
+  text-transform: $text-uppercase;
+  color: #cca71f;
+  font-weight: $text-bold;
+}
+
+.title:first-letter,
+.calendar-result-title:first-letter, .modal-title::first-letter {
+  text-transform: $text-capitalize;
+}
+
+.title, .modal-title {
+  font-weight: $text-bold;
+  cursor: pointer;
+}
+
+.date {
+  color: $color-gray;
+}
+
+.page-title {
+  font-size: 28px;
+  text-transform: $text-uppercase;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+
+input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: $color-gray;
+}
+
+.calendar-result-title {
+  font-weight: $text-bold;
+}
+
+
+.calendar-result-type {
+  font-weight: normal;
+  font-size: 15px;
+  color: #52b44f;
+
+}
+
+.date-picker-icon {
+  position: absolute;
+  z-index: 2;
+  margin-left: -30px;
+  margin-top: 10px;
+}
+
+.not-found,
+.calendar,
+.search-event {
+  text-align: center;
+}
+
+.filter-section {
+  background-color: #f1f1f1;
+}
+
+.filter-section-width {
+  width: 300px;
+}
+
+.filter-options-width {
+  width: 220px;
+}
+
+.load-more {
+  text-align: center;
+
+  button {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 15px;
+  }
+}
+
+.modal-body-container {
+  display: flex;
+}

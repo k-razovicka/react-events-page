@@ -2,6 +2,7 @@ $text-bold: bold;
 $color-gray: #888888;
 $text-capitalize: capitalize;
 $text-uppercase: uppercase;
+$breakpoint-tablet: 1250px;
 
 html,
 body {
@@ -76,7 +77,7 @@ input {
 }
 
 .filter-section-width {
-  width: 300px;
+  width: 200px;
 }
 
 .filter-options-width {
@@ -96,3 +97,17 @@ input {
 .modal-body-container {
   display: flex;
 }
+
+.child {
+  order: 1;
+}
+
+@media (max-width: 767px) {
+  .child {
+    flex: 0 0 100%;
+  }
+  .topper {
+    order: 0;
+  }
+}
+

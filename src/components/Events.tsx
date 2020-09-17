@@ -26,7 +26,7 @@ const Events = (props: any) => {
   return (
     <div className="row px-5 pt-2">
       {props.eventsToRender.map((event: any, index: any) => (
-        <div key={index} className="col-md-4">
+        <div key={index} className="col-md-4 col-sm-6">
           <p className="date">{formatDate(`${event.date}`)}</p>
           {event.lead_image ? (
             <img src={`${event.lead_image}`} width="100%" alt="" />

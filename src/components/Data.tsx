@@ -138,7 +138,7 @@ const Data = () => {
 
   return (
     <div className="row">
-      <div className="col-md-9 pr-0">
+      <div className="col-md-9 pr-0 child">
         <div className="mt-4 ml-5 mr-5 mb-0">
           <h1 className="page-title">pasākumi</h1>
           <hr className="mt-4"></hr>
@@ -172,7 +172,7 @@ const Data = () => {
         <Events eventsToRender={result} />
       </div>
 
-      <div className="col-md-3 filter-section">
+      <div className="col-md-3 col-sm-12 filter-section child topper">
         <div className="m-auto filter-section-width">
           <br />
           <br />

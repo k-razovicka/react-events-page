@@ -148,7 +148,7 @@ const Data = () => {
           <div>
             <Events eventsToRender={eventsToShow} />
             <div className="load-more">
-              <button onMouseEnter={handleShowMoreEvents}>Ielādēt vēl</button>
+              <button onClick={handleShowMoreEvents}>Ielādēt vēl</button>
             </div>
           </div>
         )}

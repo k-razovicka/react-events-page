@@ -22,4 +22,5 @@ You can search event by writing in search box (`handleSearch()`). It will serch 
 - highlight text when searching
 - category filtering 
 - use more typescript
+- add event archive
 - split app into more components

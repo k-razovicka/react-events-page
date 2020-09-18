@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { formatDate } from "../helpers/FormatDate";
+import { commentAmount } from "../helpers/CommentAmount";
 import ModalEvent from "./ModalEvent";
+import { Chat } from "react-bootstrap-icons";
 
 const Events = (props: any) => {
   const [modalShow, setModalShow] = useState(false);
@@ -23,6 +25,7 @@ const Events = (props: any) => {
     console.log(title);
     console.log(text);
   };
+
   return (
     <div className="row px-5 pt-2">
       {props.eventsToRender.map((event: any, index: any) => (
@@ -34,7 +37,12 @@ const Events = (props: any) => {
             <img src="https://via.placeholder.com/150" width="100%" alt="" />
           )}
 
-          <p className="category-type mt-3">{event.type}</p>
+          <div className="category-type-container">
+            <div className=" category-type-text">
+              <p className=" mt-3">{event.type}</p>
+            </div>
+            <div className="category-line"></div>
+          </div>
 
           <p
             onClick={() =>
@@ -48,6 +56,10 @@ const Events = (props: any) => {
             className="title "
           >
             {event.title}
+            <span className="pl-3">
+              <Chat  color="#52b44f" size={18}/>       
+              <span className="comment-amount">{commentAmount()}</span>
+            </span>
           </p>
         </div>
       ))}

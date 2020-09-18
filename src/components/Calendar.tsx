@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Datepicker from "react-datepicker";
 import data from "./data/data.json";
+import { CalendarWeek } from 'react-bootstrap-icons';
 import "react-datepicker/dist/react-datepicker.css";
 
 const Calendar = () => {
@@ -32,8 +33,9 @@ const Calendar = () => {
         popperPlacement="center"
         placeholderText="Atlasīt laika periodu"
       />
+      
 
-      <div className="mt-5">
+      <div className="mt-5 mb-5" >
         {events.map((event: any, i: any) => {
           return (
             <div key={i}>
@@ -47,6 +49,7 @@ const Calendar = () => {
           );
         })}
       </div>
+      <p className="event-archive-text">Skatīt notikumu arhīvu   <CalendarWeek className="ml-1" color="#52b44f" /></p>
     </div>
   );
 };

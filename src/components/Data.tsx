@@ -3,6 +3,7 @@ import data from "./data/data.json";
 import { sortDates } from "../helpers/SortDates";
 import Calendar from "./Calendar";
 import Events from "./Events";
+import { Search } from "react-bootstrap-icons";
 
 const eventsPerPage = 6;
 const arrayHoldingEvents = [] as any;
@@ -139,7 +140,7 @@ const Data = () => {
   return (
     <div className="row">
       <div className="col-md-9 pr-0 child">
-        <div className="mt-4 ml-5 mr-5 mb-0">
+        <div className="mt-4 ml-5 mr-5 mb-0 topper2">
           <h1 className="page-title">pasākumi</h1>
           <hr className="mt-4"></hr>
         </div>
@@ -177,6 +178,7 @@ const Data = () => {
           <br />
           <br />
           <div className="search-event">
+            <Search className="search-icon" color="#52b44f" />
             <input
               type="text"
               placeholder="Meklēt notikumu"
